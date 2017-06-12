@@ -20,7 +20,6 @@ class TaskDatabase():
         query = "SELECT `COLUMN_NAME` FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA`='todoapp' AND `TABLE_NAME`='tasks'"
         self.cursor.execute(query)
         tpl = self.cursor.fetchall()
-        print(tpl)
         lst = [elem[0] for elem in tpl]
         return lst
 
