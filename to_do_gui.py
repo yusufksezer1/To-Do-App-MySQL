@@ -95,12 +95,13 @@ class ToDoWindow(QWidget):
         model = self.table.model()
 
         # get the indeces of the currently selected rows
-        indeces = [elem.row() for elem in self.table.selectionModel().selectedRows()]
+        indices = [elem.row() for elem in self.table.selectionModel().selectedRows()]
 
         # remove the tasks from the database and refresh table to reflect deletion
-        for index in indeces:
+        for index in indices:
             name = model.data(model.index(index, 0)).replace("'", "\\'")
             description = model.data(model.index(index, 1)).replace("'", "\\'")
             date = model.data(model.index(index, 2))
             self.db_accessor.delete_task(name, description, date)
-            self.update_task_view(self.db_accessor.get_tasks())
+
+        self.update_task_view(self.db_accessor.get_tasks())
