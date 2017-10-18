@@ -44,3 +44,8 @@ To remove a task, click on the row number associated with the task. This should 
 ![Alt text](images/todo4.PNG?raw=true "Task highlighted")
 
 Now click the <i>Remove Selected Tasks</i> button to remove the highlighted task. You can select and remove more than one task at a time by highlighting multiple rows.
+
+![Alt text](images/todo5.PNG?raw=true "Task removed")
+
+The task(s) have been removed from the database and no are no longer displayed
+
