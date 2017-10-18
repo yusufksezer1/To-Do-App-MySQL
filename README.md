@@ -3,7 +3,7 @@ Technologies used: Google's Cloud Platform, MySQL/PyMySQL/SQL, Python
 
 A To-Do App I created with Python and PyMySQL. Application includes a GUI that users can use to create and delete "tasks." These tasks are inserted and removed from a MySQL database hosted on a Google Cloud SQL Instance. Originally used a local MySQL instance.
 
-# Setting up the app
+# Setting up and using the app
 First, clone this repository into a directory of your choosing.
 Now create a local or remote MySQL database. Create a file named credentials.py inside the cloned repository and insert the following lines:<br>
 
@@ -21,3 +21,12 @@ The server should contain a Schema named <i>ToDoApp</i>. The <i>ToDoApp</i> sche
 Make sure that your client machine's IP address (machine on which you cloned the repository) is whitelisted by your MySQL server. If not, the client may not be able to connect to the server. If using a Google Cloud SQL Instances, do this by going to:<br>
 <i>Instance Details</i> --> <i>Authorization</i> --> <i>Add Network</i>
 
+Now, run app_driver.py. The application should launch:
+
+![Alt text](images/todo1.PNG?raw=true "Application immediately after launch")
+
+Note that any existing rows (entries) in the <i>tasks</i> table are automatically fetched and displayed.
+
+To add a task, first fill in the text fields and select a due date:
+
+![Alt text](images/todo2.PNG?raw=true "Filling in text fields and selecting a due date")
