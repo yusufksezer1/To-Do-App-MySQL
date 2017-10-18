@@ -15,3 +15,4 @@ DATABASE_NAME = "name of database"<br>
 
 The server should contain a Schema named <i>ToDoApp</i>. The <i>ToDoApp</i> schema should contain a <i>tasks</i> table with the columns <i>name</i>, <i>description</i>, and <i>dueDate</i> of types <i>VARCHAR(50)</i>, <i>VARCHAR(350)</i>, and <i>DATE</i> respectively. Here is a snapshot of how to set this up in MySQL Workbench:
 
+![Alt text](images/workbench.PNG?raw=true "Setting up database via MySQL Workbench")
