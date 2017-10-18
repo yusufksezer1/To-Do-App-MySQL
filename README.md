@@ -18,7 +18,7 @@ The server should contain a Schema named <i>ToDoApp</i>. The <i>ToDoApp</i> sche
 
 ![Alt text](images/workbench.PNG?raw=true "Setting up database via MySQL Workbench")
 
-Make sure that your client machine's IP address (machine on which you cloned the repository) is whitelisted by your MySQL server. If not, the client may not be able to connect to the server. If using a Google Cloud SQL Instances, do this by going to:<br>
+Make sure that your client machine's IP address (machine on which you cloned the repository) is whitelisted by your MySQL server. If not, the client may not be able to connect to the server. If using a Google Cloud SQL Instance, do this by going to:<br>
 <i>Instance Details</i> --> <i>Authorization</i> --> <i>Add Network</i>
 
 Now, run app_driver.py. The application should launch:
