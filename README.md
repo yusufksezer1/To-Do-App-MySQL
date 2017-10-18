@@ -5,7 +5,10 @@ A To-Do App I created with Python and PyMySQL. Application includes a GUI that u
 
 # Using the app
 First create a local or remote MySQL database. Create a file named credentials.py and insert the following code:<br>
-SERVER_IP = "your ip here"<br>
+
+<i>
+SERVER_IP = "localhost or ip of remote here"<br>
 USERNAME = "your MySQL instance username"<br>
 PASSWORD = "your MySQL instance password"<br>
 DATABASE_NAME = "name of database"<br>
+</i>
