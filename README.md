@@ -27,6 +27,7 @@ Now, run app_driver.py. The application should launch:
 
 Note that any existing rows (entries) in the <i>tasks</i> table are automatically fetched and displayed.
 
+
 To add a task, first fill in the text fields and select a due date:
 
 ![Alt text](images/todo2.PNG?raw=true "Filling in text fields and selecting a due date")
@@ -36,3 +37,10 @@ Now, click the <i>Create Task</i> button to add the task to the database!
 ![Alt text](images/todo3.PNG?raw=true "New task added")
 
 Notice that the task is now visible in the table at the bottom of the window.
+
+
+To remove a task, click on the row number associated with the task. This should highlight the whole row:
+
+![Alt text](images/todo4.PNG?raw=true "Task highlighted")
+
+Now click the <i>Remove Selected Tasks</i> button to remove the highlighted task. You can select and remove more than one task at a time by highlighting multiple rows.
